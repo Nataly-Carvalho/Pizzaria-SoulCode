@@ -21,7 +21,6 @@ O sistema de gerenciamento de pedidos para a pizzaria inclui as seguintes funcio
 - Cadastro, atualização e exclusão de bebidas.
 - Cadastro, atualização e exclusão de pedidos.
 - Cadastro, atualização e exclusão de pedidos bebidas.
-- Cadastro, atualização e exclusão de pizza pedida has ingrediente.
 - Cadastro, atualização e exclusão de fornada.
 - Cadastro, atualização e exclusão de pizza pedida.
 
