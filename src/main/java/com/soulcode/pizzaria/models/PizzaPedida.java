@@ -2,7 +2,9 @@ package com.soulcode.pizzaria.models;
 
 import jakarta.persistence.*;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 public class PizzaPedida {
@@ -21,6 +23,14 @@ public class PizzaPedida {
 
     @ManyToOne
     private Pedido pedidos;
+
+    @ManyToMany
+    @JoinTable(
+            name = "pizza_pedida_has_ingrediente",
+            joinColumns = @JoinColumn(name = "pizza_pedida_id"),
+            inverseJoinColumns = @JoinColumn(name = "ingrediente_id")
+    )
+    private Set<Ingredientes> ingredientes = new HashSet<>();
 
     public PizzaPedida() {}
 
